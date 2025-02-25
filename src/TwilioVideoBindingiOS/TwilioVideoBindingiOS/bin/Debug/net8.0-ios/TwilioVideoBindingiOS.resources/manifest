@@ -1,0 +1,14 @@
+﻿<BindingAssembly>
+	<NativeReference Name="TwilioVideo.xcframework">
+		<ForceLoad></ForceLoad>
+		<Frameworks></Frameworks>
+		<IdentityWithoutPathSeparatorSuffix>../../../external/TwilioVideo.xcframework</IdentityWithoutPathSeparatorSuffix>
+		<IsCxx></IsCxx>
+		<Kind>Static</Kind>
+		<LinkerFlags></LinkerFlags>
+		<LinkWithSwiftSystemLibraries></LinkWithSwiftSystemLibraries>
+		<NeedsGccExceptionHandling></NeedsGccExceptionHandling>
+		<SmartLink>False</SmartLink>
+		<WeakFrameworks></WeakFrameworks>
+	</NativeReference>
+</BindingAssembly>

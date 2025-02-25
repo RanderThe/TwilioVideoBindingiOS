@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0-ios</TargetFramework>
+		<Nullable>enable</Nullable>
+		<Version>1.0.0</Version>
+		<ImplicitUsings>true</ImplicitUsings>
+		<IsBindingProject>true</IsBindingProject>
+		<!-- Desativa Bitcode e otimizações problemáticas -->
+		<EnableBitcode>false</EnableBitcode>
+		<IsPackable>true</IsPackable>
+		<Authors>RanderThe</Authors>
+		<MtouchExtraArgs>--optimize=-remove-bitcode</MtouchExtraArgs>
+		<Description>Update for Twilio iOS binding using .NET 8</Description>
+		<ReleaseVersion>1.0.0</ReleaseVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+		<ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<NativeReference Include="..\..\..\external\TwilioVideo.xcframework">
+		  <Kind>Static</Kind>
+		  <SmartLink>False</SmartLink>
+		</NativeReference>
+	</ItemGroup>
+</Project>

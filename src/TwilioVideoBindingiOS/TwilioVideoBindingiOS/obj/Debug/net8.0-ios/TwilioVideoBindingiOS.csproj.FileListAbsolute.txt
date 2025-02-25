@@ -1,0 +1,11 @@
+/Users/ageas/Projects/MyNugetPackages/RanderTwilioBinding/src/TwilioVideoBindingiOS/TwilioVideoBindingiOS/bin/Debug/net8.0-ios/TwilioVideoBindingiOS.resources.stamp
+/Users/ageas/Projects/MyNugetPackages/RanderTwilioBinding/src/TwilioVideoBindingiOS/TwilioVideoBindingiOS/bin/Debug/net8.0-ios/TwilioVideoBindingiOS.dll
+/Users/ageas/Projects/MyNugetPackages/RanderTwilioBinding/src/TwilioVideoBindingiOS/TwilioVideoBindingiOS/obj/Debug/net8.0-ios/_ProcessedBundleResourcesPath.items
+/Users/ageas/Projects/MyNugetPackages/RanderTwilioBinding/src/TwilioVideoBindingiOS/TwilioVideoBindingiOS/obj/Debug/net8.0-ios/_ProcessedContentPath.items
+/Users/ageas/Projects/MyNugetPackages/RanderTwilioBinding/src/TwilioVideoBindingiOS/TwilioVideoBindingiOS/obj/Debug/net8.0-ios/TwilioVideoBindingiOS.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ageas/Projects/MyNugetPackages/RanderTwilioBinding/src/TwilioVideoBindingiOS/TwilioVideoBindingiOS/obj/Debug/net8.0-ios/TwilioVideoBindingiOS.AssemblyInfoInputs.cache
+/Users/ageas/Projects/MyNugetPackages/RanderTwilioBinding/src/TwilioVideoBindingiOS/TwilioVideoBindingiOS/obj/Debug/net8.0-ios/TwilioVideoBindingiOS.AssemblyInfo.cs
+/Users/ageas/Projects/MyNugetPackages/RanderTwilioBinding/src/TwilioVideoBindingiOS/TwilioVideoBindingiOS/obj/Debug/net8.0-ios/TwilioVideoBindingiOS.csproj.CoreCompileInputs.cache
+/Users/ageas/Projects/MyNugetPackages/RanderTwilioBinding/src/TwilioVideoBindingiOS/TwilioVideoBindingiOS/obj/Debug/net8.0-ios/TwilioVideoBindingiOS.dll
+/Users/ageas/Projects/MyNugetPackages/RanderTwilioBinding/src/TwilioVideoBindingiOS/TwilioVideoBindingiOS/obj/Debug/net8.0-ios/refint/TwilioVideoBindingiOS.dll
+/Users/ageas/Projects/MyNugetPackages/RanderTwilioBinding/src/TwilioVideoBindingiOS/TwilioVideoBindingiOS/obj/Debug/net8.0-ios/ref/TwilioVideoBindingiOS.dll
