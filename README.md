@@ -1,4 +1,4 @@
-[![NuGet Version](https://img.shields.io/nuget/v/TwilioVideoBindingiOS.svg)](https://www.nuget.org/packages/TwilioVideoBindingiOS/) ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+[![NuGet Version](https://img.shields.io/nuget/v/TwilioVideoBindingiOS.svg)](https://www.nuget.org/packages/Video.Twilio.iOS.Binding/) ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 # TwilioVideoBindingiOS
 
