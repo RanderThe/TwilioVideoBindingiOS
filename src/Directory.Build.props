@@ -15,7 +15,7 @@
 
     <PropertyGroup>
     <Authors>$(Company)</Authors>
-      <PackageTags>Twilio Binding for iOS .NET 8</PackageTags>
+      <PackageTags>twilio;video;ios;twilio video;binding;maui;xamarin;voip</PackageTags>
       <PackageProjectUrl>https://github.com/RanderThe/TwilioVideoBindingiOS</PackageProjectUrl>
       <PackageReleaseNotes>https://github.com/RanderThe/TwilioVideoBindingiOS/blob/main/CHANGELOG.md</PackageReleaseNotes>
       <PackageReadmeFile>README.md</PackageReadmeFile>
