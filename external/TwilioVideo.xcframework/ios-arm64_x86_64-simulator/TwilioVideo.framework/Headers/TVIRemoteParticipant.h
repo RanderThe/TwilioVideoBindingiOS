@@ -299,10 +299,12 @@ NS_SWIFT_NAME(remoteParticipantSwitchedOnVideoTrack(participant:track:));
  * @param participant The remote participant.
  * @param priority The publish priority.
  * @param publication The remote audio track publication
+ *
+ * @discussion This method is deprecated since version 5.10.1.
  */
 - (void)remoteParticipant:(nonnull TVIRemoteParticipant *)participant
  didChangePublishPriority:(nonnull TVITrackPriority)priority
-            forAudioTrack:(nonnull TVIRemoteAudioTrackPublication *)publication
+            forAudioTrack:(nonnull TVIRemoteAudioTrackPublication *)publication __attribute__((deprecated()))
 NS_SWIFT_NAME(remoteParticipantDidChangeAudioTrackPublishPriority(participant:priority:publication:));
 
 /**
@@ -311,10 +313,12 @@ NS_SWIFT_NAME(remoteParticipantDidChangeAudioTrackPublishPriority(participant:pr
  * @param participant The remote participant.
  * @param priority The publish priority.
  * @param publication The remote video track publication.
+ *
+ * @discussion This method is deprecated since version 5.10.1.
  */
 - (void)remoteParticipant:(nonnull TVIRemoteParticipant *)participant
  didChangePublishPriority:(nonnull TVITrackPriority)priority
-            forVideoTrack:(nonnull TVIRemoteVideoTrackPublication *)publication
+            forVideoTrack:(nonnull TVIRemoteVideoTrackPublication *)publication __attribute__((deprecated()))
 NS_SWIFT_NAME(remoteParticipantDidChangeVideoTrackPublishPriority(participant:priority:publication:));
 
 /**
@@ -323,10 +327,12 @@ NS_SWIFT_NAME(remoteParticipantDidChangeVideoTrackPublishPriority(participant:pr
  * @param participant The remote participant.
  * @param priority The publish priority
  * @param publication The remote data track publication.
+ *
+ * @discussion This method is deprecated since version 5.10.1.
  */
 - (void)remoteParticipant:(nonnull TVIRemoteParticipant *)participant
  didChangePublishPriority:(nonnull TVITrackPriority)priority
-             forDataTrack:(nonnull TVIRemoteDataTrackPublication *)publication
+             forDataTrack:(nonnull TVIRemoteDataTrackPublication *)publication __attribute__((deprecated()))
 NS_SWIFT_NAME(remoteParticipantDidChangeDataTrackPublishPriority(participant:priority:publication:));
 
 @end

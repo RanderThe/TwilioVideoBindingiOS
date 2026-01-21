@@ -227,6 +227,9 @@ NS_SWIFT_NAME(localParticipantDidPublishVideoTrack(participant:videoTrackPublica
  * @param participant The local participant.
  * @param videoTrack The video track that failed publication.
  * @param error An `NSError` object describing the reason for the failure.
+ *
+ * @discussion Please note that for P2P and GO rooms, this callback is not raised for
+ * `TVILocalVideoTrack`s added in `TVIConnectOptionsBuilder.videoTracks` or auto-created within.
  */
 - (void)localParticipant:(nonnull TVILocalParticipant *)participant
 didFailToPublishVideoTrack:(nonnull TVILocalVideoTrack *)videoTrack

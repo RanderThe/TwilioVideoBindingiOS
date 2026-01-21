@@ -64,6 +64,14 @@ NS_SWIFT_NAME(ConnectOptionsBuilder)
 @property (nonatomic, assign, getter = isDominantSpeakerEnabled) BOOL dominantSpeakerEnabled;
 
 /**
+ *  @brief Enables or disables receiving the transcriptions API.
+ *
+ *  @discussion Set this to `YES` to enable receiving transcriptions when using Group Rooms. This option has no effect
+ *  in Peer-to-Peer Rooms. The default value is `NO`.
+ */
+@property (nonatomic, assign, getter = isReceiveTranscriptionsEnabled) BOOL receiveTranscriptions;
+
+/**
  *  @brief Encoding parameters to use when sharing media in the Room.
  *
  *  @discussion The default value is `nil` which indicates that parameters will be chosen by the media engine.
@@ -258,6 +266,14 @@ NS_SWIFT_NAME(ConnectOptions)
  *  in Peer-to-Peer Rooms. The default value is `NO`.
  */
 @property (nonatomic, assign, readonly, getter = isDominantSpeakerEnabled) BOOL dominantSpeakerEnabled;
+
+/**
+ *  @brief Enables or disables receiving the transcriptions  API.
+ *
+ *  @discussion Set this to `YES` to enable the Live Transcription API when using Group Rooms. This option has no effect
+ *  in Peer-to-Peer Rooms. The default value is `NO`.
+ */
+@property (nonatomic, assign, readonly, getter = isReceiveTranscriptionsEnabled) BOOL receiveTranscriptions;
 
 /**
  *  @brief Encoding parameters to use when sharing media in the Room.

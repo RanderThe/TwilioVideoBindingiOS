@@ -13,6 +13,7 @@
 
 @class TVICameraPreviewView;
 @protocol TVICameraSourceDelegate;
+@protocol TVIBackgroundProcessor;
 
 /**
  * The domain for errors raised by `TVICameraSource`.
@@ -85,10 +86,29 @@ NS_SWIFT_NAME(CameraSource)
 - (nullable instancetype)initWithOptions:(nonnull TVICameraSourceOptions *)options
                                 delegate:(nullable id<TVICameraSourceDelegate>)delegate NS_DESIGNATED_INITIALIZER;
 
+
+/**
+ *  @brief Initializes a `TVICameraSource` with all configuration options. This is the designated initializer. This initializer can only be used with iOS version 17 or higher.
+ *
+ *  @param options A `TVICameraSourceOptions` instance to configure your source.
+ *  @param delegate A delegate conforming to `TVICameraSourceDelegate`, or `nil`.
+ *  @param backgroundProcessorDelegate A delegate conforming to `TVIBackgroundProcessor`. Used for virtual background or background blurring.
+ *  @return A `TVICameraSource`, or nil if one could not be created.
+ */
+- (nullable instancetype)initWithOptions:(nonnull TVICameraSourceOptions *)options
+                                delegate:(nullable id<TVICameraSourceDelegate>)delegate
+             backgroundProcessorDelegate:(nonnull id<TVIBackgroundProcessor>)backgroundProcessorDelegate NS_DESIGNATED_INITIALIZER API_AVAILABLE(ios(17.0));;
+
 /**
  *  @brief The source's delegate.
  */
 @property (nonatomic, weak, nullable) id<TVICameraSourceDelegate> delegate;
+
+
+/**
+ *  @brief The background processor delegate 
+ */
+@property (nonatomic, weak, nullable) id<TVIBackgroundProcessor> backgroundProcessorDelegate API_AVAILABLE(ios(17.0));
 
 /**
  *  @brief Returns the device that the source is currently capturing from. This property will be set when invoking
@@ -330,4 +350,13 @@ NS_SWIFT_NAME(cameraSourceWasInterrupted(source:reason:));
     didFailWithError:(nonnull NSError *)error
 NS_SWIFT_NAME(cameraSourceDidFail(source:error:));
 
+/**
+ *   @brief The system is reporting system pressure due to the camera source
+ *
+ *  @param source The source which is causing the pressure.
+ *  @param level  The pressure [level](https://developer.apple.com/documentation/avfoundation/avcapturedevice/systempressurestate/level).
+*/
+- (void)cameraSource:(nonnull TVICameraSource *)source
+    isReportingSystemPressure:(nonnull AVCaptureSystemPressureLevel)level
+NS_SWIFT_NAME(cameraSourceIsReportingSystemPressure(source:level:));
 @end

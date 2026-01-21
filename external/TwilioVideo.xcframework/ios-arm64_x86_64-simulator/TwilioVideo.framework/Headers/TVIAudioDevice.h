@@ -24,7 +24,19 @@ extern "C" {
  * `startRendering:` here.
  */
 void TVIAudioDeviceFormatChanged(TVIAudioDeviceContext _Nonnull context)
-NS_SWIFT_NAME(AudioDeviceFormatChanged(context:));
+NS_SWIFT_NAME(AudioDeviceFormatChanged(context:))
+__attribute__( (deprecated("Will not be supported in TwilioVideo v6.0+", "TVIAudioDeviceReinitialize")) );
+
+/**
+ *  This method should be called when (1) capturing or rendering format is changed, (2) audio device is re-enabled, (3) audio session is uninterrupted, (4) audio route is changed.
+ *  As a result, the media engine will read the new audio format, stop capturing and/or rendering by calling `stopCapturing` and/or `stopRendering`, and then call `startRendering:`
+ *  and/or `startRendering:`.
+ *
+ *  @param context The context pointer. You should use the same context provided in `startCapturing:` and/or
+ * `startRendering:` here.
+ */
+void TVIAudioDeviceReinitialize(TVIAudioDeviceContext _Nonnull context)
+NS_SWIFT_NAME(AudioDeviceReinitialize(context:));
 
 /**
  *  This method is called by your `TVIAudioDeviceCapturer` to provide captured data to the media engine.
@@ -98,7 +110,7 @@ NS_SWIFT_NAME(AudioDeviceRenderer)
  *  that audio rendering is not supported.
  *
  *  @discussion This method is called once before rendering starts. If you wish to change the format after you've started
- *  rendering audio then you should call `TVIAudioDeviceFormatChanged()` and prepare for this method to be queried again.
+ *  rendering audio then you should call `TVIAudioDeviceReinitialize()` and prepare for this method to be queried again.
  */
 - (nullable TVIAudioFormat *)renderFormat;
 
@@ -116,7 +128,7 @@ NS_SWIFT_NAME(AudioDeviceRenderer)
  *  @brief Starts the renderer.
  *
  *  @param context A context pointer to be used with the audio renderer function callbacks
- *  TVIAudioDeviceFormatChanged(), TVIAudioDeviceReadRenderData() and TVIAudioDeviceExecuteWorkerBlock().
+ *  TVIAudioDeviceFormatChanged(), TVIAudioDeviceReinitialize(), TVIAudioDeviceReadRenderData() and TVIAudioDeviceExecuteWorkerBlock().
  *
  *  @return `YES` if rendering started, or `NO` if it did not.
  *
@@ -154,7 +166,7 @@ NS_SWIFT_NAME(AudioDeviceCapturer)
  *  that audio capture is not supported.
  *
  *  @discussion This method is called once before capture starts. If you wish to change the format after you've started
- *  capturing audio then you should call `TVIAudioDeviceFormatChanged()` and prepare for this method to be queried again.
+ *  capturing audio then you should call `TVIAudioDeviceReinitialize()` and prepare for this method to be queried again.
  */
 - (nullable TVIAudioFormat *)captureFormat;
 
@@ -172,7 +184,7 @@ NS_SWIFT_NAME(AudioDeviceCapturer)
  *  @brief Starts the capturer.
  *
  *  @param context A context pointer to be used with the audio capture function callbacks
- *  TVIAudioDeviceFormatChanged(), TVIAudioDeviceWriteCaptureData() and TVIAudioDeviceExecuteWorkerBlock().
+ *  TVIAudioDeviceFormatChanged(), TVIAudioDeviceReinitialize(), TVIAudioDeviceWriteCaptureData() and TVIAudioDeviceExecuteWorkerBlock().
  *
  *  @return `YES` if capturing started, or `NO` if it did not.
  *

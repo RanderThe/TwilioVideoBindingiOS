@@ -31,8 +31,9 @@ NS_SWIFT_NAME(RemoteVideoTrackPublication)
  *  @brief Get the `TVITrackPriority` set by the publisher for the corresponding `TVIRemoteVideoTrack`.
  *
  *  @discussion This property will return `TVITrackPriorityStandard` if no priority was specified by the publisher.
+ *  This property is deprecated since version 5.10.1.
  */
-@property (nonatomic, copy, readonly, nonnull) TVITrackPriority publishPriority;
+@property (nonatomic, copy, readonly, nonnull) TVITrackPriority publishPriority __attribute__((deprecated()));
 
 /**
  *  @brief Developers shouldn't initialize this class directly.

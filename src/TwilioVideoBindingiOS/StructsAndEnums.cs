@@ -206,11 +206,8 @@ namespace TwilioVideoBindingiOS
         Relay = 1
     }
 
-    public enum TVIIsacCodecSampleRate : ushort
-    {
-        Wideband = 16000,
-        SuperWideband = 32000
-    }
+    // TVIIsacCodecSampleRate was removed in newer versions of Twilio Video SDK
+    // Use appropriate sample rates for OpusCodec, G722Codec, PcmaCodec, or PcmuCodec instead
 
     [Native]
     public enum TVINetworkQualityLevel : long

@@ -15,7 +15,7 @@
  */
 NS_SWIFT_NAME(CameraSourceOrientationDelegate)
 @protocol TVICameraSourceOrientationDelegate <NSObject>
-@required
+@optional
 
 /**
  *  @brief A callback that should be fired whenever the tracker's orientation changes.
@@ -24,9 +24,22 @@ NS_SWIFT_NAME(CameraSourceOrientationDelegate)
  *
  *  @discussion This method should be called on the main thread. Calling the delegate causes `TVICameraSource` to enqueue an update task on its
  *  internal `AVCaptureVideoDataOutput` queue, and to update the `TVICameraPreviewView` orientation, if present.
+ *  This method is deprecated in favor of `trackerRotationAngleDidChange`.
  */
 - (void)trackerOrientationDidChange:(AVCaptureVideoOrientation)orientation
-NS_SWIFT_NAME(trackerOrientationDidChange(_:));
+NS_SWIFT_NAME(trackerOrientationDidChange(_:))
+__attribute__((deprecated("Use the `trackerRotationAngleDidChange:rotationAngle:` method instead.")));
+
+/**
+ *  @brief A callback that should be fired whenever the tracker's rotation angle changes.
+ *
+ *  @param rotationAngle The updated rotation angle value.
+ *
+ *  @discussion This method should be called on the main thread. Calling the delegate causes `TVICameraSource` to enqueue an update task on its
+ *  internal `AVCaptureVideoDataOutput` queue, and to update the `TVICameraPreviewView` orientation, if present.
+ */
+- (void)trackerRotationAngleDidChange:(CGFloat)rotationAngle
+NS_SWIFT_NAME(trackerRotationAngleDidChange(_:));
 
 @end
 
@@ -47,8 +60,15 @@ NS_SWIFT_NAME(CameraSourceOrientationTracker)
 /**
  *  @brief The currently observed orientation, in the form of `AVCaptureVideoOrientation`.
  *  The value is used by `TVICameraSource` to configure its internal `AVCaptureVideoDataOutput` and `AVCaptureVideoPreviewLayer` connections.
+ *  This property is deprecated in favor of `rotationAngle`.
  */
-@property (nonatomic, assign, readonly) AVCaptureVideoOrientation orientation;
+@property (nonatomic, assign, readonly) AVCaptureVideoOrientation orientation __attribute__((deprecated("Use the `rotationAngle` property instead.")));
+
+/**
+ *  @brief The currently observed video rotation angle, in the form of `CGFloat`.
+ *  The value is used by `TVICameraSource` to configure its internal `AVCaptureVideoDataOutput` and `AVCaptureVideoPreviewLayer` connections.
+ */
+@property (nonatomic, assign, readonly) CGFloat rotationAngle;
 
 @end
 
@@ -67,8 +87,17 @@ NS_SWIFT_NAME(UserInterfaceTracker)
  *  @discussion It is highly recommended to construct this class on the main thread.
  *  When the tracker is constructed off the main thread, this property is eventually consistent with the state of the user interface, otherwise it is updated immediately.
  *  `UInterfaceOrientation` is mapped directly to `AVCaptureVideoOrientation` except for `UIIntefaceOrientationUnknown` which is translated to `AVCaptureVideoOrientationLandscapeRight`.
+ *  This property is deprecated in favor of `rotationAngle`.
  */
-@property (nonatomic, assign, readonly) AVCaptureVideoOrientation orientation;
+@property (nonatomic, assign, readonly) AVCaptureVideoOrientation orientation __attribute__((deprecated("Use the `rotationAngle` property instead.")));
+
+/**
+ *  @brief The currently observed video rotation angle based upon the UIApplication or UIScene.
+ *
+ *  @discussion It is highly recommended to construct this class on the main thread.
+ *  When the tracker is constructed off the main thread, this property is eventually consistent with the state of the user interface, otherwise it is updated immediately.
+ */
+@property (nonatomic, assign, readonly) CGFloat rotationAngle;
 
 /**
  *  @brief The scene that is being monitored for orientation changes.

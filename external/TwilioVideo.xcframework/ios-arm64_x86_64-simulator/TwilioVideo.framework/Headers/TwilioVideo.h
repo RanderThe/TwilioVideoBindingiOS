@@ -34,7 +34,6 @@
 #import "TVIIceCandidatePairStats.h"
 #import "TVIIceCandidateStats.h"
 #import "TVIIceOptions.h"
-#import "TVIIsacCodec.h"
 #import "TVILocalAudioTrack.h"
 #import "TVILocalAudioTrackPublication.h"
 #import "TVILocalAudioTrackStats.h"
@@ -63,6 +62,7 @@
 #import "TVIRemoteVideoTrackPublication.h"
 #import "TVIRemoteVideoTrackStats.h"
 #import "TVIRoom.h"
+#import "TVISampleBufferVideoView.h"
 #import "TVIScreenContent.h"
 #import "TVIStatsReport.h"
 #import "TVITrack.h"
@@ -82,6 +82,8 @@
 #import "TVIVideoView.h"
 #import "TVIVp8Codec.h"
 #import "TVIVp9Codec.h"
+#import "TVIVideoTrackStoringSampleBufferVideoView.h"
+#import "TVIBackgroundProcessor.h"
 
 /**
  *  Different logging levels.

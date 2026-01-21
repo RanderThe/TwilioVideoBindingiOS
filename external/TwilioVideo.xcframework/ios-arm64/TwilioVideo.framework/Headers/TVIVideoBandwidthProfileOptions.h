@@ -165,8 +165,10 @@ NS_SWIFT_NAME(VideoBandwidthProfileOptionsBuilder)
 
 /**
  *  @brief Optional property to specify the default TrackPriority of the Dominant Speaker's `TVIRemoteVideoTrack`(s).
+ *
+ *  @discussion This property is deprecated since version 5.10.1.
  */
-@property (nonatomic, copy, nullable) TVITrackPriority dominantSpeakerPriority;
+@property (nonatomic, copy, nullable) TVITrackPriority dominantSpeakerPriority __attribute__((deprecated()));
 
 /**
  *  @brief Optional property to specify the maximum downlink video bandwidth in Kilobits per second (Kbps).
@@ -255,8 +257,10 @@ NS_SWIFT_NAME(VideoBandwidthProfileOptions)
 
 /**
  *  @brief Optional property to specify the default TrackPriority of the Dominant Speaker's `TVIRemoteVideoTrack`(s).
+ *
+ *  @discussion This property is deprecated since version 5.10.1.
  */
-@property (nonatomic, copy, readonly, nullable) TVITrackPriority dominantSpeakerPriority;
+@property (nonatomic, copy, readonly, nullable) TVITrackPriority dominantSpeakerPriority __attribute__((deprecated()));
 
 /**
  *  @brief Optional property to specify the maximum downlink video bandwidth in Kilobits per second (Kbps).

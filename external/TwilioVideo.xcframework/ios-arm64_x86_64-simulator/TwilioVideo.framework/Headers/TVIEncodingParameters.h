@@ -32,6 +32,31 @@ NS_SWIFT_NAME(EncodingParameters)
  *  @param maxVideoBitrate The maximum video send bitrate in Kilobits per second (Kbps).
  *
  *  @return A `TVIEncodingParameters` instance.
+ *
+ *  @discussion Audio and video encoding parameters. Maximum bitrate is specified as Transport Independent Application Specific
+ *  Maximum (TIAS) bitrate <a href="https://tools.ietf.org/html/rfc3890">RFC3890</a> in kilobits per second (kbps) excluding
+ *  IP/UDP/TCP headers. Maximum bitrate applies to variable bitrate codecs and is limited to 100 Mbps.
+ *
+ *  **Note:** These encoding parameters are applied for each peer connection, each track and each simulcast layer.
+ *
+ *  For group Rooms, there is a single peer connection to Twilio Media Server, but for peer-to-peer Rooms, there is
+ *  a separate peer connection for each participant. I.e., if you set maximum video bitrate to 1 Mbps and you have two
+ *  `TVIRemoteParticipant` in the Room, the effective video send bitrate may be up to 2 Mbps.
+ *
+ *  If you are publishing multiple video tracks (e.g. camera and screen share), each track
+ *  receives the maximum bitrate specified. I.e. if you set maximum video bitrate to 1 Mbps and you publish both
+ *  a camera and a screen share track, the effective video send bitrate may be up to 2 Mbps.
+ *
+ *  If simulcast is used for video tracks, each simulcast layer receives the maximum bitrate specified.
+ *  i.e. if your set the maximum bitrate to 1 Mbps and you publish a simulcast video track, the effective
+ *  video send bitrate may be up to 3 Mbps if there are three simulcast layers.
+ *
+ *  The codec used also affects the bitrate. Each codec type has a minimum and maximum bitrate, and the
+ *  bitrate used for a track will always be between those values, even if a higher or lower bitrate is specified here.
+ *
+ *  Encoding parameters can be updated any time, using `TVILocalParticipant::setEncodingParameters`
+ *
+ *  Please note that values reported by statistics API will be higher due to packetization overhead etc.
  */
 - (_Nonnull instancetype)initWithAudioBitrate:(NSUInteger)maxAudioBitrate
                                  videoBitrate:(NSUInteger)maxVideoBitrate;
@@ -48,6 +73,7 @@ NS_SWIFT_NAME(EncodingParameters)
  *  @brief Maximum video send bitrate in Kilobits per second.
  *
  *  @discussion Zero indicates the WebRTC default value, which is 2000 Kbps.
+ *  The bitrate limit is applied individually to each video track and, if simulcast is used, to each simulcast layer.
  */
 @property (nonatomic, assign, readonly) NSUInteger maxVideoBitrate;
 

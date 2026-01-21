@@ -303,4 +303,15 @@ NS_SWIFT_NAME(roomDidStopRecording(room:));
 - (void)room:(nonnull TVIRoom *)room dominantSpeakerDidChange:(nullable TVIRemoteParticipant *)participant
 NS_SWIFT_NAME(dominantSpeakerDidChange(room:participant:));
 
+/**
+ *  @brief This method is invoked when live transcription is available in the Room.
+ *
+ *  @param room The Room in which the live transcription is available.
+ *  @param transcription A dictionary of deserialized JSON payload containing the transcription and related parameters.
+ *
+ *  @discussion This method is invoked  when live transcription is available in the Room.
+ */
+- (void)room:(nonnull TVIRoom *)room didReceiveTranscription:(nonnull NSDictionary *)transcription
+NS_SWIFT_NAME(transcriptionReceived(room:transcription:));
+
 @end

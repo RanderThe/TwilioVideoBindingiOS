@@ -40,6 +40,15 @@ NS_SWIFT_NAME(CameraSourceOptionsBuilder)
 @interface TVICameraSourceOptionsBuilder : NSObject
 
 /**
+ *  @brief Allows the developer to enable support for camera multi tasking. When this is supported by the device, setting this option to true will allow the camera to continue running when the video applicaiton is put in background, or on a splitted view.
+ *
+ *  @discussion Only a few apple devices supports this features. Twilio Video SDK will enable this feature by default when possible.
+ *
+ *  @see [Accessing the camera while multitasking on iPad](https://developer.apple.com/documentation/avkit/accessing_the_camera_while_multitasking_on_ipad)
+ */
+@property (nonatomic, assign) BOOL enableCameraMultitasking API_AVAILABLE(ios(16.0));;
+
+/**
  *  @brief Allows the developer to customize how `TVICameraSource` tracks video orientation for capture and preview.
  *
  *  @discussion Defaults to `+[TVIUserInterfaceTracker tracker]` which monitors `-[UIApplication statusBarOrientation]`.
@@ -136,6 +145,16 @@ NS_SWIFT_NAME(CameraSourceOptions)
  *  @see [AVCaptureDevice](AVCaptureDevice.h)
  */
 @property (nonatomic, assign, readonly) CGFloat zoomFactor;
+
+
+/**
+ *  @brief Allows the developer to enable support for camera multi tasking. When this is supported by the device, setting this option to true will allow the camera to continue running when the video applicaiton is put in background
+ *
+ *  @discussion Only a few apple devices supports this features. Twilio Video SDK will enable this feature by default when possible.
+ *
+ *  @see [Accessing the camera while multitasking on iPad](https://developer.apple.com/documentation/avkit/accessing_the_camera_while_multitasking_on_ipad)
+ */
+@property (nonatomic, assign) BOOL enableCameraMultitasking API_AVAILABLE(ios(16.0));;
 
 /**
  *  @brief Developers shouldn't initialize this class directly.

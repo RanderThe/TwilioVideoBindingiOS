@@ -1422,14 +1422,8 @@ namespace TwilioVideoBindingiOS
         TVIIceOptions OptionsWithBlock(TVIIceOptionsBuilderBlock block);
     }
 
-    // @interface TVIIsacCodec : TVIAudioCodec
-    [BaseType(typeof(TVIAudioCodec))]
-    interface TVIIsacCodec
-    {
-        // @property (readonly, nonatomic) TVIIsacCodecSampleRate sampleRate;
-        [Export("sampleRate")]
-        TVIIsacCodecSampleRate SampleRate { get; }
-    }
+    // TVIIsacCodec was removed in newer versions of Twilio Video SDK
+    // Use TVIOpusCodec, TVIG722Codec, TVIPcmaCodec, or TVIPcmuCodec instead
 
     // @interface TVILocalAudioTrack : TVIAudioTrack
     [BaseType(typeof(TVIAudioTrack))]
