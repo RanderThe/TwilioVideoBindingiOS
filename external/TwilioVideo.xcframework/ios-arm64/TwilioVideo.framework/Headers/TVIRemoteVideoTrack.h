@@ -32,9 +32,9 @@ NS_SWIFT_NAME(RemoteVideoTrack)
  *  @discussion The default subscriber priority is `nil`, which indicates that the subscriber has not set a
  *  priority for this `TVIRemoteVideoTrack`. If the `TVIRemoteVideoTrack` has been unsubscribed from then
  *  this will return the last set priority. Setting this property to `nil` clears the subscribers `TVITrackPriority` for
- *  this `TVIRemoteVideoTrack`.
+ *  this `TVIRemoteVideoTrack`. This property is deprecated since version 5.10.1.
  */
-@property (nonatomic, copy, nullable) TVITrackPriority priority;
+@property (nonatomic, copy, nullable) TVITrackPriority priority __attribute__((deprecated()));
 
 /**
  *  @brief Developers shouldn't initialize this class directly.

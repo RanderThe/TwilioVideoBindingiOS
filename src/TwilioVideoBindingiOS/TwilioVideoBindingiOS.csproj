@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net8.0-ios</TargetFramework>
+		<TargetFramework>net9.0-ios</TargetFramework>
 		<Nullable>enable</Nullable>
-		<Version>1.0.0</Version>
+		<Version>2.0.0</Version>
 		<ImplicitUsings>true</ImplicitUsings>
 		<IsBindingProject>true</IsBindingProject>
 		<!-- Desativa Bitcode e otimizações problemáticas -->
@@ -11,8 +11,8 @@
 		<IsPackable>true</IsPackable>
 		<Authors>RanderThe</Authors>
 		<MtouchExtraArgs>--optimize=-remove-bitcode</MtouchExtraArgs>
-		<Description>Update for Twilio iOS binding using .NET 8</Description>
-		<ReleaseVersion>1.0.0</ReleaseVersion>
+		<Description>Twilio Video iOS 5.11.1 binding for .NET 9 - Fixed TVIIsacCodec removal</Description>
+		<ReleaseVersion>2.0.0</ReleaseVersion>
 		<PackageId>Video.Twilio.iOS.Binding</PackageId>
 	</PropertyGroup>
 	<ItemGroup>

@@ -25,9 +25,9 @@ NS_SWIFT_NAME(LocalDataTrackPublication)
  *  @brief The track priority of the `TVILocalDataTrackPublication`
  *
  *  @discussion The publisher's `TVITrackPriority` for the corresponding `TVILocalDataTrack` can be updated after
- *  it has been published.
+ *  it has been published. This property is deprecated since version 5.10.1.
  */
-@property (nonatomic, copy, nonnull) TVITrackPriority priority;
+@property (nonatomic, copy, nonnull) TVITrackPriority priority __attribute__((deprecated()));
 
 /**
  *  @brief Developers shouldn't initialize this class directly.

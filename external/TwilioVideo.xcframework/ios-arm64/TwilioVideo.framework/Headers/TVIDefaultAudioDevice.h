@@ -33,7 +33,11 @@ static TVIAVAudioSessionConfigurationBlock _Nonnull kTVIDefaultAVAudioSessionCon
     
     if (![session setCategory:AVAudioSessionCategoryPlayAndRecord
                          mode:AVAudioSessionModeVideoChat
-                      options:AVAudioSessionCategoryOptionAllowBluetooth
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 260000
+                      options:AVAudioSessionCategoryOptionAllowBluetoothHFP
+#else
+                      options: AVAudioSessionCategoryOptionAllowBluetooth
+#endif
                         error:&error]) {
         NSLog(@"AVAudioSession setCategory:options:mode:error: %@",error);
     }

@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/TVIAudioDevice.h</key>
 		<data>
-		f6MbdOS1mpMKqxqQPE/DEOuG98k=
+		/G9Qh2UM5boFXIN6KlsarC37IKw=
 		</data>
 		<key>Headers/TVIAudioFormat.h</key>
 		<data>
@@ -40,6 +40,10 @@
 		<data>
 		legKtdj9V40I74fVbIS/6uzFtBo=
 		</data>
+		<key>Headers/TVIBackgroundProcessor.h</key>
+		<data>
+		vDe/QT2oEw0X5rP5mX8mKAnIUMw=
+		</data>
 		<key>Headers/TVIBandwidthProfileOptions.h</key>
 		<data>
 		p6NWWeSB2d/FQkrqfi0ZYv34OSA=
@@ -54,19 +58,19 @@
 		</data>
 		<key>Headers/TVICameraSource.h</key>
 		<data>
-		jaqJVg0SCEOVsl4/lvsW9BsfJWk=
+		kQ4W+JDsfjeGhqmsHazcvQQKEp4=
 		</data>
 		<key>Headers/TVICameraSourceOptions.h</key>
 		<data>
-		7iFc8uIo2yNJDRFptJnKOwVnQhM=
+		bMxYrAq5GlIJCe2WwX64qOCK2Y0=
 		</data>
 		<key>Headers/TVICameraSourceOrientationTracker.h</key>
 		<data>
-		iYe9sWhk6x5JXLPUvNRclxmmU+w=
+		1Q+AerxYV0J4S1RTIh5k5vKUpc4=
 		</data>
 		<key>Headers/TVIConnectOptions.h</key>
 		<data>
-		EVjK3QCTXsgIZxHfeM4XOJ/TY5c=
+		XhHyHacrA8Ho6el/hqQR4IHLm9k=
 		</data>
 		<key>Headers/TVIDataTrack.h</key>
 		<data>
@@ -82,11 +86,11 @@
 		</data>
 		<key>Headers/TVIDefaultAudioDevice.h</key>
 		<data>
-		1QFOszNEDMbjiSq0HqU+fecE3zQ=
+		otbFzD7vAedgtv6xB856/4YZZq4=
 		</data>
 		<key>Headers/TVIEncodingParameters.h</key>
 		<data>
-		UHBPIRtXSgsXAacPFut6VrfqdrA=
+		AyUFgy0kxLUMh+TTW/THUnWWawE=
 		</data>
 		<key>Headers/TVIError.h</key>
 		<data>
@@ -112,17 +116,13 @@
 		<data>
 		50n9n6julOneQ1OQ0xgahG4rlBs=
 		</data>
-		<key>Headers/TVIIsacCodec.h</key>
-		<data>
-		a9EcwGoCBgd8WogVbnUa2DBYo/U=
-		</data>
 		<key>Headers/TVILocalAudioTrack.h</key>
 		<data>
 		g4rT2ge62aM0HsTPDCk51xLeLts=
 		</data>
 		<key>Headers/TVILocalAudioTrackPublication.h</key>
 		<data>
-		Vya7ulv4TkH/o59mChSnyjRDfwA=
+		N2wlxBQvsrY7BUfhKFn8m8Ml5Ic=
 		</data>
 		<key>Headers/TVILocalAudioTrackStats.h</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>Headers/TVILocalDataTrackPublication.h</key>
 		<data>
-		AOnw0mvkOW7kZ5aSI8U+/NF4Y4k=
+		2dymj4g90gjVyPVC5d+6VylL+zs=
 		</data>
 		<key>Headers/TVILocalNetworkPrivacyPolicy.h</key>
 		<data>
@@ -142,11 +142,11 @@
 		</data>
 		<key>Headers/TVILocalParticipant.h</key>
 		<data>
-		w8HSVt1qnMzhjEmXPbOqm9k8x1k=
+		TFPVEmvHOX+j3lpVzkjVShAUVy0=
 		</data>
 		<key>Headers/TVILocalTrackPublicationOptions.h</key>
 		<data>
-		YDHK+UnB5eVYnsIVtTC7bPrwKD4=
+		6pnDWpQCrtgFm6iS/BFJrCJBK/s=
 		</data>
 		<key>Headers/TVILocalTrackStats.h</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>Headers/TVILocalVideoTrackPublication.h</key>
 		<data>
-		b4PrpFOYzHgU8oMDhpoKUfM2yhs=
+		NY6eSzn5Yu/Jz0UB8nGwWJ2NXIA=
 		</data>
 		<key>Headers/TVILocalVideoTrackStats.h</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>Headers/TVIRemoteAudioTrackPublication.h</key>
 		<data>
-		gu8rK2SUNZxWAPbogCrdeFo3Q6g=
+		9zLl4vf9sxjI0NJ7w+UJMS870Us=
 		</data>
 		<key>Headers/TVIRemoteAudioTrackStats.h</key>
 		<data>
@@ -202,11 +202,11 @@
 		</data>
 		<key>Headers/TVIRemoteDataTrackPublication.h</key>
 		<data>
-		M3FUPIaUKTDZz+iQxCm1NuAgtXw=
+		JjwhUzKDLOXz+1XhAgnLsr3w/BI=
 		</data>
 		<key>Headers/TVIRemoteParticipant.h</key>
 		<data>
-		eG+SkOLWhthYDNtJfYWN7fPQs8E=
+		2UbVamfmQdGyPMIb7r+oyorRdTE=
 		</data>
 		<key>Headers/TVIRemoteTrackStats.h</key>
 		<data>
@@ -214,11 +214,11 @@
 		</data>
 		<key>Headers/TVIRemoteVideoTrack.h</key>
 		<data>
-		SNnTj3bgQqZe/lpYTRHcQccZIoo=
+		3xOsvsMGpRmkgC7W6TuhI9buTOg=
 		</data>
 		<key>Headers/TVIRemoteVideoTrackPublication.h</key>
 		<data>
-		xiEzU4wTo8KDh324EdmOyG7yZag=
+		mVrzOZmrqsVW36hXEmqDaex2MaY=
 		</data>
 		<key>Headers/TVIRemoteVideoTrackStats.h</key>
 		<data>
@@ -226,7 +226,11 @@
 		</data>
 		<key>Headers/TVIRoom.h</key>
 		<data>
-		LK+6H/HGFFZzUFB9nRxv00/L1i8=
+		+PSPkncSIEMx8IiV946zhWCr47o=
+		</data>
+		<key>Headers/TVISampleBufferVideoView.h</key>
+		<data>
+		j916++XenSAoZGy3bJbliXhhLcI=
 		</data>
 		<key>Headers/TVIScreenContent.h</key>
 		<data>
@@ -242,7 +246,7 @@
 		</data>
 		<key>Headers/TVITrackPriority.h</key>
 		<data>
-		kXB47yb3Bos2psupGMARVjTilZI=
+		Kvh29GWHBXZG9FNqXYQHuhAqEAA=
 		</data>
 		<key>Headers/TVITrackPublication.h</key>
 		<data>
@@ -250,7 +254,7 @@
 		</data>
 		<key>Headers/TVIVideoBandwidthProfileOptions.h</key>
 		<data>
-		WwqbSO1MQ3w0DQCNBPoekXzo9bE=
+		eASi3fy1P5PFybY0uSKCUAdGUOI=
 		</data>
 		<key>Headers/TVIVideoCodec.h</key>
 		<data>
@@ -292,6 +296,10 @@
 		<data>
 		ZuBXbSrvKMUFT5No5grLpAj22Kk=
 		</data>
+		<key>Headers/TVIVideoTrackStoringSampleBufferVideoView.h</key>
+		<data>
+		kUZzUKM2FXAa+wNDkXByANbcRXE=
+		</data>
 		<key>Headers/TVIVideoView.h</key>
 		<data>
 		fINfAeWstdchP5oV4eWv8fQ4CCI=
@@ -306,15 +314,19 @@
 		</data>
 		<key>Headers/TwilioVideo.h</key>
 		<data>
-		zUUEGXvG/Ha8n3Qfv/F9fdwBsMc=
+		PCK2f+wS2ccRDv3IV90ZAHCmT84=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TMFBYYeqcCjpuFMWDwe3oGdWRns=
+		KIw09cUdjSkYl4/n6qSVHSo2lz0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		3gaU7jmC444ZSEiHM/QCxsIwbwU=
+		93/qaDmwe8PYeJtJN3fpPsbk4Tg=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		YQK08x80kJUMNaphn6RGiEgZSYw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -344,7 +356,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a4yVErzGTFSGgHPRevUPJ3XgSt4PTs2pRbGg1BEZSPI=
+			IuvXVr564b7ILTr7LeazsDBqvki/hO7dWEaXtagU/kM=
 			</data>
 		</dict>
 		<key>Headers/TVIAudioFormat.h</key>
@@ -382,6 +394,13 @@
 			8WMk2cHt5SOG53nOcaU0rXcDolvqIujR+OTaeHPst+4=
 			</data>
 		</dict>
+		<key>Headers/TVIBackgroundProcessor.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5sEJQa2NxopZUXBGflBfQ8jhTKhmFIMC13gT0CykQBE=
+			</data>
+		</dict>
 		<key>Headers/TVIBandwidthProfileOptions.h</key>
 		<dict>
 			<key>hash2</key>
@@ -407,28 +426,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S3jXjPXa8ZuAAXKFF0U5EZYU4Uivf1MIkbH3H3sPu3Q=
+			/Sn7aNQO/mGPMLel8Gg8ZgEcj4LmbX12KhMZWfWvbTw=
 			</data>
 		</dict>
 		<key>Headers/TVICameraSourceOptions.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JtILRyv480YUdJSVcDR0XHbKJZ7ZX3JXOLWPwA07KtQ=
+			4o503kBH+MoryaX8KUb79HZaghJtDx2dp+6lMxmniIM=
 			</data>
 		</dict>
 		<key>Headers/TVICameraSourceOrientationTracker.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JIRqIVBbJXljPAQPeJr/t36n9rfHmXbboSZuM7H6Er0=
+			2lxO9IN609rM/sLuYgpD/nCQ302b8d3o2ggmwi/DTXo=
 			</data>
 		</dict>
 		<key>Headers/TVIConnectOptions.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5FVEFCpjVDNUq8Z6Q9qo207HoDBVY/wS+rXCaGy2o6E=
+			vBoWlgi9XgKvQalkGMM1ll5kHIUU7MlZmgQOXUgxATc=
 			</data>
 		</dict>
 		<key>Headers/TVIDataTrack.h</key>
@@ -456,14 +475,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cmbm1jMNbN9kXos5JhQi44fNIwcaEx90Pmbf94a9DIU=
+			5TdogMCzIYzYJ/SJwwk7IdzTzQlvTSindoTPe/9AL+s=
 			</data>
 		</dict>
 		<key>Headers/TVIEncodingParameters.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b+YN2vswCPii8ZOWeF93naLaBRCDfRJU7RgKKxaUhpw=
+			W1dM+3pVLtftLSCw2Aeoh+gAPC+xVUDEHXWck7fyz8A=
 			</data>
 		</dict>
 		<key>Headers/TVIError.h</key>
@@ -508,13 +527,6 @@
 			8FoV8fRAlfkfaif/jyZ9Z5/I+skXyUf5PgmdMr9V3ZY=
 			</data>
 		</dict>
-		<key>Headers/TVIIsacCodec.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			jb6E9XVN29DutllT5KPRN0aTz8Z48WLUa82JI2tE0o8=
-			</data>
-		</dict>
 		<key>Headers/TVILocalAudioTrack.h</key>
 		<dict>
 			<key>hash2</key>
@@ -526,7 +538,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G93Ci2kIFnygslYKxoYkGbjbEQjsgoyx/mdRwDOocuI=
+			QbIHwu7IEUAQoLXbn9L/vih3gZabpYtJJttyzope0Zg=
 			</data>
 		</dict>
 		<key>Headers/TVILocalAudioTrackStats.h</key>
@@ -547,7 +559,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pKij+tDxhnX2OUIlu3snGUaWUw8mH1E5y/vf3qVhFYM=
+			VyQlgZial6/wEHf3Z8SdKL/eNVc/yOdrKPxrJrafPk4=
 			</data>
 		</dict>
 		<key>Headers/TVILocalNetworkPrivacyPolicy.h</key>
@@ -561,14 +573,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RGEIja5tJVTSYUSHL+9pfh5RJfVa9Ue6XNj6y8peh/Y=
+			xHAB7Gd3ArfwhBr/J8gW88335LK4Xtl1NzonwCzHsyc=
 			</data>
 		</dict>
 		<key>Headers/TVILocalTrackPublicationOptions.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			okgGoRBF31H3TwAPIVRKDzcrvVahUVl6rf83fKGb1CI=
+			wT8x/OlyhInUWYym4tJdSv7R//mAWHazwfHLXqsrcbQ=
 			</data>
 		</dict>
 		<key>Headers/TVILocalTrackStats.h</key>
@@ -589,7 +601,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			m4LSFp8P9qozYZe4YwzCLgKGeTs+TNICPIOWCTKygfw=
+			Zu0UNDuh23dh4CLefZgxHFOflTije5V46s1dExcnbMY=
 			</data>
 		</dict>
 		<key>Headers/TVILocalVideoTrackStats.h</key>
@@ -645,7 +657,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4L1qJjLxrjbAiq83CkJXxJeWQM1GkvJYkffkNMjg/wU=
+			aiyeENDSHZEZKWg3B9U+hb3PC/ZpUeNRGXSLfdCdZm8=
 			</data>
 		</dict>
 		<key>Headers/TVIRemoteAudioTrackStats.h</key>
@@ -666,14 +678,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TbxBpge3SyaXBRMTAiUHV5VwM0agz4DO3LEpba2zBZs=
+			tc+POF5esYhIBnwJg2L4Er3vnzY1HlhENgxAlK1U8bg=
 			</data>
 		</dict>
 		<key>Headers/TVIRemoteParticipant.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u/bLa9UE1tvbkvvkKLFOo0osLzf0sGY/EExUJw2MNP8=
+			6RBbgEQhAKvTp31PdpsTwdPyGRLhhcvSWaBjcpD5goc=
 			</data>
 		</dict>
 		<key>Headers/TVIRemoteTrackStats.h</key>
@@ -687,14 +699,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yX6MZlxLxSsK7YfNT3Lf3Xq9vx4ECuX0aYCDkIYH3pY=
+			07pX9www0CxL7q2RxZfPRXGywkQTOe8heSYrUIjZ1eU=
 			</data>
 		</dict>
 		<key>Headers/TVIRemoteVideoTrackPublication.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n4amWhgBPE29yRcqBdgDsPM/Gf7z61YAKK3s8auvM8w=
+			/FxOYInTAjgpdQANuEATTO7eAk13+shPbLPdbKnTgsc=
 			</data>
 		</dict>
 		<key>Headers/TVIRemoteVideoTrackStats.h</key>
@@ -708,7 +720,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CAOJ1yJBYLwov0z3mthuWogDbIW1BU5YyOoYcc2P58I=
+			C2KecilHfYygqjtC7A9Dn3H0Cj3xdS/ebxLsXiZMqwI=
+			</data>
+		</dict>
+		<key>Headers/TVISampleBufferVideoView.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bqZwuAgEcYZwVPPmKlvWWj8SHLpoAwRf7Y/hDHJChC4=
 			</data>
 		</dict>
 		<key>Headers/TVIScreenContent.h</key>
@@ -736,7 +755,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hclnazJg+0uwNpajZ1sFlD4an+DoNCT9VXcdDcG66Ds=
+			XfDcu90cpn9hwvuQVwZdHhR1z11++5aMbqf92T18Rio=
 			</data>
 		</dict>
 		<key>Headers/TVITrackPublication.h</key>
@@ -750,7 +769,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v6s2WrFr1SPJOOv+UmR4EDS+VlKSFJDbuqEXghjalYU=
+			cljqaBx+tTwN97OOJHMwG2su8DYxlky0gP2UwqyJvf8=
 			</data>
 		</dict>
 		<key>Headers/TVIVideoCodec.h</key>
@@ -823,6 +842,13 @@
 			/JQ2bcwEhRy/zTMVe+lYQ9gNUSM1AE4t3qL+27Ln0ls=
 			</data>
 		</dict>
+		<key>Headers/TVIVideoTrackStoringSampleBufferVideoView.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lT5B0/H+KpCB0DK9Qwd/0RTYMkhHvUWUZ9vKhr//3uI=
+			</data>
+		</dict>
 		<key>Headers/TVIVideoView.h</key>
 		<dict>
 			<key>hash2</key>
@@ -848,14 +874,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			weP/0dp+CsOHXvPzTw4BPWdQQyphhLSs8SLgpVKnWyw=
+			0ymayKt4YvHb8kS7MRWU6fEkwcAoo36ObXaAfMKjPk8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bde9S3NkakzXau6IIAjMlMW9+gNC1hNU95iT8hFn0r4=
+			AKPQ9zK8J4RzLtIIpKRSOlSIoniVh2cXO3pOj/71G5g=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TzMU/HPptjKGAu16lfVb0zygh0ahcxxOopW7vmzyAos=
 			</data>
 		</dict>
 	</dict>
